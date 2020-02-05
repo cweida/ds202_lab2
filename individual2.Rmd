@@ -1,0 +1,44 @@
+---
+title: "DS 202 Lab 2"
+author: "Bernard Fay; GitHub: bj99fay"
+date: "2/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+The ratings tend to fall between 2.5 and 4. Additionally, the shappe looks close to normal; the differences are likely due to the subjective way the chocolates are rated. There are at least two outliers, one with a rating of 1 and another with a rating of 5.
+
+```{r}
+choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
+ggplot(data=choco, aes(x=Rating,)) + 
+    geom_bar(fill = "blue", colour = "black")+
+    theme_bw()+
+    theme(axis.title.y = element_text(size = rel(1)),
+          axis.title.x = element_text(size = rel(1)),
+          axis.text.x = element_text(size = rel(1)),
+          axis.text.y = element_text(size = rel(1)),
+          plot.title = element_text(hjust=0.5, size = rel(1.5)))+
+    labs(x = "Rating",
+         y = "Count",
+         title = "Chocolate Ratings")
+```
+
+There doesn't appear to be a strong correlation bewteen Rating and Cocoa Percent. If there is a correlation, ut would be slightly negative, meaning as the Rating increases, the Cocoa Percent decreases.
+
+```{r}
+ggplot(data=choco, aes(x=Rating, y=Cocoa.Pct, group=1)) + 
+    geom_point()+
+    theme_bw()+
+    theme(axis.title.y = element_text(size = rel(1)),
+          axis.title.x = element_text(size = rel(1)),
+          axis.text.x = element_text(size = rel(1)),
+          axis.text.y = element_text(size = rel(1)),
+          plot.title = element_text(hjust=0.5, size = rel(1.5)))+
+    labs(x = "Rating",
+         y = "Cocoa Percent",
+         title = "Chocolate Ratings")
+```
