@@ -18,6 +18,11 @@ hist(df[,'Rating'],breaks = seq(-0.25, 5.25, by = 0.5), main = 'Distribution of 
 
 plot(df[,'Cocoa.Pct'], df[,'Rating'], log = "xy")
 ```
+
+
+
 ### Analysis of Rating Distribution
+
 It appears as though the ratings are slightly skewed left. The majority of chocolates are rated at between 3 and 3.5.
 It seems as though there is low correlation between cocoa percentage and rating. There are large numbers of samples with different cocoa percentages at all levels of ratings.
+
