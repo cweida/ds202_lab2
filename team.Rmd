@@ -27,6 +27,11 @@ As you can see, that the ratings slowly increased over the years until 2015, but
 
 #### 3. What are the three locations with the most ratings?
 
+```{r}
+table(choco$Company.Location)
 
+
+USmean <- mean()
+```
 
 
