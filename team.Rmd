@@ -9,3 +9,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<<<<<<< HEAD
+=======
+#### 1. Overall number of chocolate bars?
+```{r}
+length(choco$Rating)
+```
+
+There are 1852 unique chocolate bars tested and rated.
+
+
+#### 2. How does the number of ratings depend on the year?
+```{r}
+hist(choco$Review.Date, breaks = seq(2005.5, 2017.5, by = 1))
+```
+
+As you can see, that the ratings slowly increased over the years until 2015, but fell a bit in 2016 and much more greatly in 2017.
+
+#### 3. What are the three locations with the most ratings?
+
+
+
+
+>>>>>>> parent of baedc38... work on q3
