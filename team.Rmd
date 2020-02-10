@@ -1,11 +1,31 @@
 ---
 title: "Collaborative Portion"
-author: "Bernard Fay"
+author: "Bernard Fay; Chase Weida"
 date: "2/5/2020"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(plyr)
 ```
 
+1.
+
+2. The of reviews generally increases with each year, with the first and last years significantly deviating from this pattern.
+
+```{r}
+df <- read.csv('https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv')
+
+hist(df[,'Review.Date'], main = 'Distribution of Review Year')
+
+
+```
+
+3.
+
+4. Is there a relationship between 
+
+5.
+
+6.
