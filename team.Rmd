@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #### 1. Overall number of chocolate bars?
 ```{r}
@@ -32,3 +33,5 @@ As you can see, that the ratings slowly increased over the years until 2015, but
 
 
 >>>>>>> parent of baedc38... work on q3
+=======
+>>>>>>> parent of ab9e2e5... Answered questions 1 and 2 on the team section
