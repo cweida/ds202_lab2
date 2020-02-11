@@ -48,3 +48,24 @@ c(USmean, FranceMean, CanadaMean)
 ```
 
 The USA, France, and Canada have the most ratings. Surprisingly, the ratings go in the reverse order with Canada at the top followed by France and the USA.
+
+#### 4. Ask an interesting question.
+
+Do ratings depend on company location?
+
+#### 5. Answer the question you came up with in question 4
+
+```{r}
+df <- choco[, c("Company.Location", "Rating")]
+head(df)
+
+df2 <- aggregate(df[, 2], list(df$Company.Location), mean)
+names(df2)[names(df2) == "Group.1"] <- "Company.Location"
+names(df2)[names(df2) == "x"] <- "Rating"
+df2 <- df2[order(-df2$Rating),]
+barplot(df2$Rating, main='Rating by Company Location', ylab='Rating', xlab='Company Location', names.arg=df2$Company.Location)
+```
+
+There appears to be a negative correlation between company location and ratings. The average rating is not the same for each country, indicating that the company location influences the rating for the chocolate. Exactly why that is can not be determined from the available data.
+
+#### 6. Describe the workflow.
