@@ -1,6 +1,6 @@
 ---
 title: "Collaborative Portion"
-author: "Bernard Fay; Github: ; Chase Weida; Github: cweida"
+author: "Bernard Fay; Github: bj99fay; Chase Weida; Github: cweida"
 date: "2/5/2020"
 output: html_document
 ---
@@ -69,3 +69,5 @@ barplot(df2$Rating, main='Rating by Company Location', ylab='Rating', xlab='Comp
 There appears to be a negative correlation between company location and ratings. The average rating is not the same for each country, indicating that the company location influences the rating for the chocolate. Exactly why that is can not be determined from the available data.
 
 #### 6. Describe the workflow.
+
+To complete this portion of the lab we divided it up and worked on it when we each had time. Chase worked on questions 1 thorugh 3 and Bernie worked on questions 3 through 6. This worked well, especially when working at separate times.
